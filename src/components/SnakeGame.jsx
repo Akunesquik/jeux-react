@@ -4,6 +4,7 @@ import styles from './SnakeGame.module.css';
 const gridSize = 10;
 const initialSnake = [{ x: 4, y: 4 }];
 const initialApple = { x: 7, y: 7 };
+const initialSpeed = 100; // ms
 
 export default function SnakeGame() {
   const [snake, setSnake] = useState(initialSnake);
@@ -12,6 +13,7 @@ export default function SnakeGame() {
   const [isGameOver, setIsGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [showPopup, setShowPopup] = useState(true);
+  const [speed, setSpeed] = useState(initialSpeed);
 
 
   const resetGame = () => {
@@ -20,6 +22,7 @@ export default function SnakeGame() {
     setDirection({ x: 1, y: 0 });
     setIsGameOver(false);
     setScore(0);
+    setSpeed(initialSpeed);
   };
 
   const handleStart = () => {
@@ -80,17 +83,19 @@ export default function SnakeGame() {
           } while (newSnake.some(seg => seg.x === newApple.x && seg.y === newApple.y));
 
           setApple(newApple);
-          setScore(s => s + 1);
+          setScore((s) => s + Math.floor(1000 / speed));
+
+          setSpeed((currentSpeed) => Math.max(50, currentSpeed - 10));
           return newSnake;
         }
 
         newSnake.pop();
         return newSnake;
       });
-    }, 200);
+    }, speed);
 
     return () => clearInterval(interval);
-  }, [direction, apple, isGameOver, showPopup]);
+  }, [direction, apple, isGameOver, speed, showPopup]);
 
   return (
     <div className={styles.container}>
