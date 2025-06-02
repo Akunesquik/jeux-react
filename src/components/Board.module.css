@@ -1,0 +1,42 @@
+body{
+    min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  cursor: pointer;
+  background: #eee;
+  border: none;
+  border-radius: 10px;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.reset:hover {
+    background-color: #CCC;
+    cursor: pointer;
+}
