@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './Board.module.css';
+import styles from './Morpion.module.css';
 
 const initialBoard = Array(9).fill(null);
 

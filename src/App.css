@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #444;
+  background: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tabs button:hover {
+  background: #f0f0f0;
+}
+
+.tabs .active {
+  background: #444;
+  color: white;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
