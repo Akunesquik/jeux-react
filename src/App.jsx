@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Morpion from './components/Morpion';
 import Connect4 from './components/Connect4';
-import './App.css'; // Pour les styles des onglets
+import SnakeGame from './components/SnakeGame';
+import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('morpion');
@@ -23,11 +24,18 @@ function App() {
         >
           Puissance 4
         </button>
+        <button
+          className={activeTab === 'snake' ? 'active' : ''}
+          onClick={() => setActiveTab('snake')}
+        >
+          Snake
+        </button>
       </div>
 
       <div className="tab-content">
         {activeTab === 'morpion' && <Morpion />}
         {activeTab === 'connect4' && <Connect4 />}
+        {activeTab === 'snake' && <SnakeGame />}
       </div>
     </div>
   );
