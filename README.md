@@ -1,12 +1,28 @@
-# React + Vite
+# 🎮 Jeux en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce dépôt regroupe plusieurs mini-jeux réalisés en **React** et **JavaScript**, tous développés dans le but d'améliorer mes compétences en développement web frontend.
 
-Currently, two official plugins are available:
+## 🧩 Jeux disponibles
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Morpion** (Tic-Tac-Toe) – mode 2 joueurs locaux
+- ✅ **Puissance 4** – mode 2 joueurs locaux, détection de victoire et match nul
 
-## Expanding the ESLint configuration
+D'autres jeux seront ajoutés au fur et à mesure !
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Lancer le projet en local
+
+1. Clone le dépôt :
+   ```
+   git clone https://github.com/Akunesquik/jeux-react.git
+   cd jeux-react
+   ```
+
+2. Installe les dépendances :
+   ```
+   npm install
+   ```
+
+3. Lance le serveur de développement :
+   ```
+   npm run dev
+   ```
