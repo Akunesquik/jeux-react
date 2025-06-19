@@ -3,6 +3,7 @@ import Morpion from './components/Morpion';
 import Connect4 from './components/Connect4';
 import SnakeGame from './components/SnakeGame';
 import MemoryGame from './components/Memory';
+import Demineur from './components/Demineur';
 import './App.css';
 
 function App() {
@@ -37,6 +38,12 @@ function App() {
         >
           Memory
         </button>
+        <button
+          className={activeTab === 'demineur' ? 'active' : ''}
+          onClick={() => setActiveTab('demineur')}
+        >
+          Démineur
+        </button>
       </div>
 
       <div className="tab-content">
@@ -44,6 +51,7 @@ function App() {
         {activeTab === 'connect4' && <Connect4 />}
         {activeTab === 'snake' && <SnakeGame />}
         {activeTab === 'memory' && <MemoryGame />}
+        {activeTab === 'demineur' && <Demineur />}
       </div>
     </div>
   );

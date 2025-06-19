@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-template-rows: repeat(8, 40px);
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border: 1px solid #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+.revealed {
+  background-color: #eee;
+  cursor: default;
+}
+
+.mine {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

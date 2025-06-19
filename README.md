@@ -6,6 +6,11 @@ Ce dépôt regroupe plusieurs mini-jeux réalisés en **React** et **JavaScript*
 
 - ✅ **Morpion** (Tic-Tac-Toe) – mode 2 joueurs locaux
 - ✅ **Puissance 4** – mode 2 joueurs locaux, détection de victoire et match nul
+- ✅ **Snake** – Jeux solo
+- ✅ **Memory** – Jeux solo
+- ✅ **Démineur** – Jeux solo
+- ❓ **Simon Game** – Jeux solo
+- ❓ **2048** – Jeux solo
 
 D'autres jeux seront ajoutés au fur et à mesure !
 
