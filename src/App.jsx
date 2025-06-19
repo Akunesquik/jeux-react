@@ -4,6 +4,7 @@ import Connect4 from './components/Connect4';
 import SnakeGame from './components/SnakeGame';
 import MemoryGame from './components/Memory';
 import Demineur from './components/Demineur';
+import Simon from './components/Simon';
 import './App.css';
 
 function App() {
@@ -44,6 +45,12 @@ function App() {
         >
           Démineur
         </button>
+        <button
+          className={activeTab === 'simon' ? 'active' : ''}
+          onClick={() => setActiveTab('simon')}
+        >
+          Simon
+        </button>
       </div>
 
       <div className="tab-content">
@@ -52,6 +59,7 @@ function App() {
         {activeTab === 'snake' && <SnakeGame />}
         {activeTab === 'memory' && <MemoryGame />}
         {activeTab === 'demineur' && <Demineur />}
+        {activeTab === 'simon' && <Simon />}
       </div>
     </div>
   );
