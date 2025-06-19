@@ -59,7 +59,6 @@ export default function MemoryGame() {
 
   return (
     <div className={styles.container}>
-      <h2>🧠 Jeu de Memory</h2>
       <div className={styles.grid}>
         {deck.map((card, index) => (
           <div
