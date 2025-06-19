@@ -4,7 +4,7 @@ import styles from './SnakeGame.module.css';
 const gridSize = 10;
 const initialSnake = [{ x: 4, y: 4 }];
 const initialApple = { x: 7, y: 7 };
-const initialSpeed = 100; // ms
+const initialSpeed = 300; // ms
 
 export default function SnakeGame() {
   const [snake, setSnake] = useState(initialSnake);

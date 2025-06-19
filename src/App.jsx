@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Morpion from './components/Morpion';
 import Connect4 from './components/Connect4';
 import SnakeGame from './components/SnakeGame';
+import MemoryGame from './components/Memory';
 import './App.css';
 
 function App() {
@@ -30,12 +31,19 @@ function App() {
         >
           Snake
         </button>
+        <button
+          className={activeTab === 'memory' ? 'active' : ''}
+          onClick={() => setActiveTab('memory')}
+        >
+          Memory
+        </button>
       </div>
 
       <div className="tab-content">
         {activeTab === 'morpion' && <Morpion />}
         {activeTab === 'connect4' && <Connect4 />}
         {activeTab === 'snake' && <SnakeGame />}
+        {activeTab === 'memory' && <MemoryGame />}
       </div>
     </div>
   );

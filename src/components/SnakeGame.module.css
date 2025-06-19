@@ -20,11 +20,11 @@
 }
 
 .snake {
-  background-color: green;
+  background-color: rgb(24, 170, 24);
 }
 
 .snakeHead {
-  background-color: darkgreen;
+  background-color: rgb(0, 80, 0);
 }
 
 .apple {
