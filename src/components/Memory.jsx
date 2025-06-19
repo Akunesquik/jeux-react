@@ -74,7 +74,7 @@ export default function MemoryGame() {
         ))}
       </div>
       {matchedCount === cards.length && (
-        <div className={styles.victory}>
+        <div className={styles.victory} >
           🎉 Bravo ! Tu as gagné !
           <button onClick={handleRestart}>Rejouer</button>
         </div>
